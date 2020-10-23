@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerElements}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto text-center d-block">
+                <form class="search" data-aos="fade-down" data-duration="400">
+                    <input type="text" id="city" placeholder="Enter your city name..." autocomplete="off">
+                    <button type="submit" id="submit-btn" value="search"><i class="fas fa-search"></i> Search</button>
+                </form>
+                <div class="information" data-aos="fade-up" data-duration="400">
+                    <div class="top-layer">
+                        <p class="day"></p>
+                        <p class="date"></p>
+                    </div>
+                    <div class="bottom-layer">
+                        <p class="city-name">Output goes here...</p>
+                        <div class="middle-layer data-hide">
+                            <p class="temperature">28&deg;C</p>
+                            <p class="weather-icon"><i class="fas fa-cloud fa-3x"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {{>footer}}
+
+    {{>jslinks}}
+    <script src="js/index.js"></script>
+</body>
+</html>

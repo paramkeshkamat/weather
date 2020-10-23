@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerElements}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container main-header">
+        <div class="row">
+            <div class="col-lg-7 col-11 mx-auto header-left" data-aos="fade-right">
+                <p>Welcome to Weather App</p>
+                <h1>Get the latest <span> Weather </span> Info of your City</h1>
+                <a href="/weather"><button>Check Now</button></a>
+            </div>
+            <div class="col-lg-5 col-11 mx-auto header-right" data-aos="fade-left">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/season_change.svg" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/weather_notification.svg" class="w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/weather.svg" class="w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    {{>jslinks}}
+
+</body>
+</html>

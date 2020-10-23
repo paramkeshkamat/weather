@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerElements}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container main-header">
+        <div class="row">
+            <div class="col-lg-5 col-11 mx-auto header-left text-center" data-aos="fade-up">
+                <img src="/images/error404.svg" alt="..." class="error-img img-fluid">
+                <h1 class="error-msg">{{errorMsg}}</h1>
+                <a href="/"><button class="">Go Back</button></a>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    
+    {{>jslinks}}
+</body>
+
+</html>
